@@ -180,8 +180,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7720726507797323357, guid: e9be6b9d71ce20345b55b654f6eca5d9, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 621326559}
+    - targetCorrespondingSourceObject: {fileID: 7720726507797323357, guid: e9be6b9d71ce20345b55b654f6eca5d9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 621326555}
+      addedObject: {fileID: 621326558}
     - targetCorrespondingSourceObject: {fileID: 8013316820124944228, guid: e9be6b9d71ce20345b55b654f6eca5d9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 80165819}
@@ -246,27 +249,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f43dd9485150034ba92038fbdd0431d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCarController
-  axleInfos:
-  - leftWheel: {fileID: 80165813}
-    rightWheel: {fileID: 80165812}
-    motor: 1
-    steering: 1
-  - leftWheel: {fileID: 80165811}
-    rightWheel: {fileID: 80165810}
-    motor: 1
-    steering: 0
-  maxMotorTorque: 400
-  maxSteeringAngle: 30
+  axleInfos: []
+  maxMotorTorque: 0
+  maxSteeringAngle: 0
   maxBrakeTorque: 2000
   brakeKey: 32
-  wheelFL: {fileID: 80165813}
-  wheelFR: {fileID: 80165812}
-  wheelBL: {fileID: 80165811}
-  wheelBR: {fileID: 80165810}
-  wheelFLTrans: {fileID: 80165817}
-  wheelFRTrans: {fileID: 80165816}
-  wheelBLTrans: {fileID: 80165815}
-  wheelBRTrans: {fileID: 80165814}
+  wheelFL: {fileID: 0}
+  wheelFR: {fileID: 0}
+  wheelBL: {fileID: 0}
+  wheelBR: {fileID: 0}
+  wheelFLTrans: {fileID: 0}
+  wheelFRTrans: {fileID: 0}
+  wheelBLTrans: {fileID: 0}
+  wheelBRTrans: {fileID: 0}
 --- !u!64 &80165824
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -517,7 +512,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7720726507797323357, guid: e9be6b9d71ce20345b55b654f6eca5d9, type: 3}
   m_PrefabInstance: {fileID: 80165808}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &621326555
+--- !u!114 &621326558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -526,7 +521,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 621326554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f43dd9485150034ba92038fbdd0431d, type: 3}
+  m_Script: {fileID: 11500000, guid: 916a80b345e70da4c8625e201448199d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCarController
   axleInfos:
@@ -550,6 +545,19 @@ MonoBehaviour:
   wheelFRTrans: {fileID: 80165816}
   wheelBLTrans: {fileID: 80165815}
   wheelBRTrans: {fileID: 80165814}
+--- !u!114 &621326559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621326554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b492dedc5cb678f4aa65ea7c007ced62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCounter
+  collisionText: {fileID: 0}
 --- !u!1 &825181244
 GameObject:
   m_ObjectHideFlags: 0
