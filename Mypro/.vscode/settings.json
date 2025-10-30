@@ -66,5 +66,22 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
-    "dotnet.defaultSolution": "Mypro.sln"
+    "dotnet.defaultSolution": "Mypro.sln",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "www.dmgpt.site",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "dbms_class",
+            "database": "db_class",
+            "username": "student",
+            "password": "studentpass"
+        }
+    ]
 }
