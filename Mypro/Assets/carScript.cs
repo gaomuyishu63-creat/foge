@@ -52,7 +52,7 @@ public class carScript : MonoBehaviour
  
     public void FixedUpdate()
     {
-        motor = -maxMotorTorque * Input.GetAxis("Vertical");
+        motor = maxMotorTorque * Input.GetAxis("Vertical");
         steering = maxSteeringAngle * Input.GetAxis("Horizontal");
  
         foreach (AxleInfo axleInfo in axleInfos)
