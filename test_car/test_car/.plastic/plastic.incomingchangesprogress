@@ -1,0 +1,20 @@
+[
+  {
+    "MountId": "56e62dd7-241f-41e9-8c6b-dd4ca4513e62",
+    "AncestorCsetIds": [
+      1
+    ],
+    "SourceCsetId": 2,
+    "DestinationCsetId": 1,
+    "FileConflicts": [
+      {
+        "Path": "/ProjectSettings/ShaderGraphSettings.asset",
+        "ItemId": 135,
+        "ParentItemId": 131,
+        "BaseRevId": 104,
+        "SourceRevId": 400,
+        "DestinationRevId": 104
+      }
+    ]
+  }
+]

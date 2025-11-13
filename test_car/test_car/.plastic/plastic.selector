@@ -1,0 +1,4 @@
+repository "test_car/test_car@15669618463528@cloud"
+  path "/"
+    br "/main"
+    co "/main"

@@ -2,18 +2,11 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public float speed = 1.0f;
     Rigidbody rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-    }
-
-    void Start()
-    {
-        // 初回発射
-        Launch((transform.forward + transform.right).normalized, speed);
     }
 
     public void Launch(Vector3 dir, float spd)
